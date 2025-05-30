@@ -1,0 +1,34 @@
+sentinelstack/
+├── README.md
+├── docker-compose.yml
+├── .env
+├── gateway-service/               # Optional API Gateway
+│   └── src/...
+├── logger-service/
+│   ├── src/
+│   │   ├── main/java/com/sentinel/logger/
+│   │   └── resources/
+│   └── Dockerfile
+├── notification-service/
+│   ├── src/
+│   │   ├── main/java/com/sentinel/notification/
+│   │   └── resources/
+│   └── Dockerfile
+├── ai-wrapper-service/
+│   ├── src/
+│   │   ├── main/java/com/sentinel/ai/
+│   │   └── resources/
+│   └── Dockerfile
+├── iam-service/
+│   ├── src/
+│   │   ├── main/java/com/sentinel/iam/
+│   │   └── resources/
+│   └── Dockerfile
+├── dashboard-service/            # Optional frontend or reporting service
+│   ├── src/ (React or Spring Boot)
+│   └── Dockerfile
+├── common-lib/                   # Shared utilities or DTOs (optional)
+│   └── src/...
+└── k8s/ or deploy/               # For deployment manifests
+    ├── logger-deployment.yml
+    └── ...

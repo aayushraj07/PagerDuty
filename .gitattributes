@@ -1,0 +1,9 @@
+# Root-level defaults (apply to all services)
+*.java text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.md text
+*.json text
