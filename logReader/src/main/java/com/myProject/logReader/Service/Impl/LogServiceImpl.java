@@ -50,6 +50,8 @@ public class LogServiceImpl implements LogService {
                 // No duplicate — insert as new entry
                 LogEntry newLog = new LogEntry();
                 newLog.setEventId(request.getEventId());
+                newLog.setStatus(request.getStatus());
+                newLog.setLevel(request.getLevel());
                 newLog.setEvent(request.getEvent());
                 newLog.setDuplicated(false);
                 logEntryRepository.save(newLog);
